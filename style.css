@@ -1,0 +1,25 @@
+.white {
+    color: white;
+    font-size: large;
+ }
+ .red{
+    color: red;
+    font-size: medium;
+ }
+
+ .green{
+    color: aquamarine;
+    font-size: x-large;
+
+ }
+.stroke{
+    color: white;
+    stroke: red;
+    stroke-width: 50%;
+
+}
+.fontsize{
+    color: antiquewhite;
+    font-size: xx-large;
+
+}
