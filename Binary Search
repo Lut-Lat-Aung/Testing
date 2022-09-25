@@ -1,0 +1,21 @@
+def binarySearch(key, ls):
+    ls.sort()
+    size = len(ls)
+    leftMost = 0
+    rightMost = size -1
+    
+    while True:
+        middle = round((leftMost + rightMost) / 2)
+        if key == ls[middle]:
+            return True
+        elif key < ls[middle]:
+            
+            rightMost = middle -1
+        else:
+            leftMost = middle + 1
+        if leftMost > rightMost:
+            return False
+        
+key = 5
+ls = [1,7,9,5,6,3]
+binarySearch(key, ls)
