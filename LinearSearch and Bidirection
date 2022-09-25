@@ -1,0 +1,82 @@
+def LinearSearch(key, ls):
+    i = 0
+    while i < len(ls):
+        if ls[i] == key:
+            return True, i+1
+        i += 1
+    return False, i
+
+def BiDirectionLinearSearch(key, ls):
+    i = 0
+    j = len(ls) - 1
+    while i < j:
+        if ls[i] == key or ls[j] == key:
+            return True, i+1
+        i += 1
+        j -= 1
+    return False, i
+
+def FourSliceLinearSearch(key, ls):
+    n = int(len(ls) / 4)
+    s1 = ls[0:n]
+    s2 = ls[n:2*n]
+    s3 = ls[2*n:3*n]
+    s4 = ls[3*n:]
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    count = 0 # to count a number of loop
+    for i in range(len(ls)):
+        if s1[i1] == key or s2[i2] == key or s3[i3] == key or s4[i4] == key:
+            count += 1
+            return True, count
+        i1 += 1
+        i2 += 1
+        i3 += 1
+        i4 += 1
+        count += 1
+    return False, count
+
+
+# def FourSliceBiDirectionSearch(key,ls):
+#     #ls.reverse()
+#     n = int(len(ls) / 4)
+#     s1 = ls[0:n]
+#     s2 = ls[n:2*n]
+#     s3 = ls[2*n:3*n]
+#     s4 = ls[3*n:]
+#     i1 = 0
+#     i2 = 0
+#     i3 = 0
+#     i4 = 0
+#     count = 0 # to count a number of loop
+#     for i in range(len(ls)):
+#         if s1[i1] == key or s2[i2] == key or s3[i3] == key or s4[i4] == key:
+#             count += 1
+#             return True, count
+#         i1 += 1
+#         i2 += 1
+#         i3 += 1
+#         i4 += 1
+#         count += 1
+#     return False, count
+
+    
+myNum2 = [5,3,13,2,11,4,7,22,33,44,55,66,77,88,99,111,112,123,234,345,444,434,90,93]
+key = 123
+
+result, loopcount = LinearSearch(key, myNum2)
+result, loopcount2 = BiDirectionLinearSearch(key, myNum2)
+result, loopcount3 = FourSliceLinearSearch(key, myNum2)
+# result, loopcount4 = FourSliceBiDirectionSearch(key, myNum2)
+
+if result:
+    print(f'{key} is found in {myNum2}')
+    print(f'For LienarSearch(), it takes {loopcount} loop(s) to find {key}.')
+    print(f'For BiDirectionLienarSearch(), it takes {loopcount2} loop(s) to find {key}.')
+    print(f'For FourSliceLinearSearch(), it takes {loopcount3} loop(s) to find {key}.')
+#     print(f'For FourSliceBiDirectionSearch(), it takes {loopcount4} loop(s) to find {key}.')
+
+else:
+    print(f'{key} is not in {myNum2} and it takes {loopcount} loop(s)')
