@@ -1,0 +1,35 @@
+
+def mixWord(word1, word2):
+    outword = ""
+    u = 0
+    if len(word1) < len(word2):   # for condition that word1 is shorter than word2
+        
+        for i in (word1):
+            outword += i.lower()
+            
+            outword += (word2[u]).upper()
+            u += 1
+        print(outword, end = "")
+        print((word2[(len(word1)):len(word2)]).upper())
+        
+    elif len(word1) > len(word2):    # for condition that word1 is longer than word2
+        for i in (word2):
+            outword += i.lower()
+            
+            outword += (word1[u]).upper()
+            u += 1
+        print(outword, end = "")
+        print((word1[(len(word2)):len(word1)]).upper())
+                
+    else:                              # for condition that word1 is the same length as word2
+        for i in (word1):
+            outword += i.lower()
+            
+            outword += (word2[u]).upper()
+            u += 1
+        print(outword, end = "")
+    
+word1 = input('Enter word#1: ')
+word2 = input('Enter word#2: ')
+print(f'Mixed word is ', end = "")
+mixWord(word1, word2)
