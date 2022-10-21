@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <a href= "http://127.0.0.1:5500/My%20CV%20form%20project.html"><button type="button" class = "button" title = "You can go back to home page by clicking">
+         Home</button>
+      
+      </a> 
+      <a href= "https://lut-lat-aung.github.io/Testing/"><button type="button" class = "button" title = "This is my Social Life">
+         
+         Contact</button> 
+
+      </a>
+      <button type="button" class = "button" title = "This is all my Certificate and Best Quality">Certificates</button> 
+      
+      <title>Lut Lat Aung's CV form</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+   </head>
+   <body style="background-color:rgb(11, 77, 77);">
+      <h1   class="green" style="text-align: center; font-size:xx-large;" > Hello, You</h1>
+
+      <h2 class="white" style="color:antiquewhite; text-align: center; font-size:xx-large">This is the best part of Getting to Know Me</h2>
+
+
+      <i class = "stroke" style="font-size: 30px;"
+      
+      >Hello, Nice to meet you
+      
+      </i>
+      <p class="fontsize">I am Lut Lat Aung aka Alex
+
+      </p>
+
+      <p class="white"> 
+         What I Do
+
+      </p>
+
+
+      <a href="https://imgur.com/QDPld9Q"><img src="./images/68f91e2d53df9c509992badc3e6826a1.jpg" style="width: 85px; height: 112px;"title="Magic Mike" /></a>
+
+   </body>
+
+</html>
