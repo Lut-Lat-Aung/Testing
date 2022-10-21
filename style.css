@@ -23,3 +23,30 @@
     font-size: xx-large;
 
 }
+.button1 {
+    color: white;
+    background-color: rgb(13, 64, 64);
+    border-color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.button {
+    
+    color: white;
+    background-color: rgb(13, 64, 64);
+    border-color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
