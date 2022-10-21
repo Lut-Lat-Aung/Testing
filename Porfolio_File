@@ -13,8 +13,7 @@
       <button type="button" class = "button" title = "This is all my Certificate and Best Quality">Certificates</button> 
       
       <title>Lut Lat Aung's CV form</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+     
    </head>
    <body style="background-color:rgb(11, 77, 77);">
       <h1   class="green" style="text-align: center; font-size:xx-large;" > Hello, You</h1>
